@@ -1,0 +1,3 @@
+[img[images/misc/neleuphoric.png|nelEuphoric on a black background.]img]
+<p><strong>nelEuphoric</strong> is an emoji in [[dashnet-forums-discord-server|DashNet Forums]]. It uses the icon of maximum happiness from [[neverending-legacy|NeverEnding Legacy (NEL)]], hence the "nel" prefix. It was originally suggested by [[Fractyl]], along with five other NEL related emojis. The original name of the emoji was nelHappy, taken from the file name of the image Fractyl provided for the emoji. It was changed to nelEuphoric after Leo suggested the names be changed to match unused names in the code for NEL.</p>
+<p>The emoji was not used particularly often after its addition in November 2025 until Pawcide popularized it during August 2026.</p>

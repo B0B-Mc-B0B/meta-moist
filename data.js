@@ -29,4 +29,11 @@ const pages = {
   "elag422":{title:"Elag422"},
   "elag":{title:"Elag", redirect:"elag422"},
   "fish-button":{title:"Fish button"},
+  "neleuphoric":{title:"nelEuphoric"},
+  "euphoric":{title:"Euphoric", redirect:"neleuphoric"},
+  "the-game-of-mao":{title:"The Game of Mao"},
+  "game-of-mao":{title:"Game of Mao", redirect:"the-game-of-mao"},
+  "gom":{title:"GoM", redirect:"the-game-of-mao"},
+  "neverending-legacy":{title:"NeverEnding Legacy"},
+  "nel":{title:"NEL", redirect:"neverending-legacy"},
 };
