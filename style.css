@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+@font-face {
+    font-family: IGM;
+    src: url('./fonts/IGM.ttf');
+}
+
+:root {
+  --accent-color: #000;
+  --bg-color: #000;
+  --bg-color2: #000;
+  --text-color: #000;
+}
+
+* {
+  font-family: "Roboto Slab", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+::selection {
+  background: var(--accent-color);
+  color: var(--bg-color);
+}
+
+body {
+  position: absolute;
+  width: 100%;
+  min-height:100%;
+  left: 0;
+  color: var(--text-color);
+  background-color: var(--bg-color2);
+  background-image:  url("images/borderShadow.png");/*, url("images/background.png");*/
+  background-attachment: fixed;
+  background-size: 100% 100%, auto;
+  margin: 0;
+}
+
+#container {
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+#wide_header {
+  background-color: var(--bg-color);
+  box-shadow:0 4px #00000088;
+  margin-bottom:10px;
+  display:none;
+}
+
+#wide_header header {
+  background-image: url("./images/header.png");
+  background-size: 100%;
+  background-position: top;
+  padding-bottom: 15%;
+  border-radius:10px;
+}
+
+#small_header {
+  background-color: var(--bg-color);
+  box-shadow:0 4px #00000088;
+  margin-bottom:10px;
+  width:130px;
+  padding: 20px;
+  font-size: smaller;
+  box-shadow:0 4px #00000088;
+}
+
+#small_header header {
+  background-image: url("./images/small-header.png");
+  background-size: 100%;
+  background-position: top;
+  padding-bottom: 38.4615384615%;
+  border-radius:10px;
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+nav li {
+  padding-top: 10px;
+  flex: 1;
+  text-align: center;
+}
+nav li a {
+  display: block;
+  font-weight: bold;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+a {
+  color: var(--accent-color);
+}
+a:visited {
+  color: var(--accent-color);
+}
+a:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+ul { list-style-type: square; }
+
+#left {
+  width: 170px;
+	order: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+#sidebar {
+  background-color: var(--bg-color);
+  padding: 20px;
+  font-size: smaller;
+  box-shadow:0 4px #00000088;
+  flex: 1; 
+}
+
+#sidebar button {
+  text-align:left;
+  width: 100%;
+  margin:2px 0;
+  cursor:pointer;
+}
+#sidebar select {
+  width: 100%;
+}
+
+#flex {
+  display: flex;
+}
+main {
+  background-color: var(--bg-color);
+  flex: 1;
+  order: 2;
+  word-wrap: break-word;
+  padding: 0;
+  box-shadow:0 4px #00000088;
+}
+
+.content {
+  padding:1.4em
+}
+h1, h2, h3 {
+	color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+h1 {
+  font-size: 25px;
+}
+
+.person_box {
+  text-align: center;
+  float:right;
+  width:250px;
+  background-color: #fff;
+  border:1px solid var(--text-color);
+  padding:10px;
+  margin:10px;
+}
+.person_image {
+  float:right;
+  width:230px;
+  background-color: #fff;
+  border:var(--text-color);
+  padding:10px;
+}
+.person_name {
+  position: relative;
+  font-weight:bold;
+  text-align: center;
+}
+.person_info {
+  display: inline-block;
+  width: 100%;
+}
+.person_detail {
+  position: relative;
+  display: flex;
+}
+.person_detail strong {
+  position: relative;
+  left:0;
+}
+.person_detail span {
+  position: relative;
+  margin-left: auto;
+  right:0;
+}
+
+.image_box {
+  float:right;
+  width:200px;
+  background-color: #fff;
+  border:1px solid var(--text-color);
+  padding:10px;
+  margin:10px;
+  font-size:0.8em;
+}
+.image_box img {
+  width:100%;
+  border:1px solid var(--text-color);
+}
+
+.redirect_notice, .disambiguation_notice {
+  border-bottom: 2px dashed var(--accent-color);
+  font-size:0.8em;
+  display:block;
+  padding:5px 0;
+}
+.disambiguation_notice {
+  font-style: italic;
+}
+.content h1 {
+  margin:0;
+}
+
+select, button {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border:1px solid var(--accent-color);
+}
+
+@media only screen and (max-width: 800px) {
+	#flex {
+		flex-wrap: wrap;
+  }
+	main {
+		order: 1;
+		width:100%;
+	}
+  #left {
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: none;
+    margin:10px 0 0 0;
+  }
+	main, #left, .banner {border-radius: 0;}
+  #left ul {   
+    margin: 0 1em;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2em;
+  }
+  #left li {
+    padding-left: 0;
+    margin: .3em 1em;
+  }
+  .img-right {
+    float: none;
+    text-align: center;
+  }
+  #small_header {
+    display:none;
+  }
+  #wide_header {
+    display:block;
+  }
+}

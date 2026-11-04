@@ -1,0 +1,2 @@
+[img[images/misc/4343.png|A screenshot of the cookie from Cookie Clicker in context]img]
+<p><strong>Cookie Clicker</strong> is an incremental game about making cookies created by [[orteil|Orteil]].</p>

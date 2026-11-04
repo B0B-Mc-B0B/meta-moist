@@ -1,0 +1,1 @@
+<p><strong>Wplace</strong> is a collaborative pixel art website where users can paint pixels on a canvas of the world map. The website is named after and based on r/place.</p>
